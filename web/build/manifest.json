@@ -1,7 +1,9 @@
 {
-  "build/app.css": "/build/app.af3d5ed2.css",
-  "build/app.js": "/build/app.721dce14.js",
-  "build/global.css": "/build/global.e62fae16.css",
+  "build/app.css": "/build/app.css",
+  "build/app.js": "/build/app.js",
+  "build/global.css": "/build/global.css",
+  "build/emoticons/fontawesome-webfont.svg?v=4.7.0": "/build/emoticons/fontawesome-webfont.svg",
+  "build/emoticons/glyphicons-halflings-regular.svg": "/build/emoticons/glyphicons-halflings-regular.svg",
   "build/fonts/MaterialIcons-Regular.woff": "/build/fonts/MaterialIcons-Regular.012cf6a1.woff",
   "build/fonts/MaterialIcons-Regular.woff2": "/build/fonts/MaterialIcons-Regular.570eb838.woff2",
   "build/fonts/MaterialIcons-Regular.ttf": "/build/fonts/MaterialIcons-Regular.a37b0c01.ttf",
@@ -13,7 +15,5 @@
   "build/fonts/glyphicons-halflings-regular.woff2": "/build/fonts/glyphicons-halflings-regular.448c34a5.woff2",
   "build/fonts/glyphicons-halflings-regular.ttf": "/build/fonts/glyphicons-halflings-regular.e18bbf61.ttf",
   "build/fonts/glyphicons-halflings-regular.eot": "/build/fonts/glyphicons-halflings-regular.f4769f9b.eot",
-  "build/fonts/glyphicons-halflings-regular.woff": "/build/fonts/glyphicons-halflings-regular.fa277232.woff",
-  "build/images/fontawesome-webfont.svg?v=4.7.0": "/build/images/fontawesome-webfont.912ec66d.svg",
-  "build/images/glyphicons-halflings-regular.svg": "/build/images/glyphicons-halflings-regular.89889688.svg"
+  "build/fonts/glyphicons-halflings-regular.woff": "/build/fonts/glyphicons-halflings-regular.fa277232.woff"
 }
