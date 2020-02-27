@@ -69,4 +69,8 @@ class Roles {
         $this->users = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
+    public function __toString() {
+        return $this->rol;
+    }
+
 }

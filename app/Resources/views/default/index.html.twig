@@ -4,31 +4,38 @@
 
     <div class="container-fluid alert alert-dark alert-dismissible fade show pt-0 pb-2"  role="alert" >
         <div class="row">
-           <div class="col-10 mx-auto">
-               <h2 class="alert-heading display-2">Bolsa de empleo</h2>
-               <hr>
-               <p class="mb-0 lead">Servicio gratuito cuya finalidad es facilitar el acceso al mercado laboral de las personas que conforman nuestra comunidad (alumnado, exalumnado...) dando respuesta a los procesos de selección solicitados por las empresas y otras organizaciones.</p>
-           </div>
+            <div class="col-10 mx-auto">
+                <h2 class="alert-heading display-2">DabbPhone</h2>
+                <hr>
+                <p class="mb-0 lead">El servicio que ofrecemos es la venta de moviles de marca con precio más economico</p><br>
+                
+                 <button class="btn-primary"> <a class="mr-0" href="{{ path('producto_new') }}"></a>Crear Producto </button>
+            </div>
         </div>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
     </div>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-10 mx-auto">
-                <h6 class="lead">A continuación ofrecemos las ofertas de empleo.</h6>
+                <h6 class="lead">A continuación os mostramos los productos.</h6>
             </div>
         </div>
         <div class="row bg-white">
             <div class="col-8 mx-auto ">
-                {% for prod in products %}
+                {% for producto in products %}
                     <div class="media py-2">
+
+                        <img class="my-auto card-img" style="width:60px" src="https://observatorio.profuturo.education/wp-content/uploads/2013/09/foto-mobile-learning.png" alt="logo empresa">
+                        
                         <div class="media-body">
                             <div class="mx-4 d-flex justify-content-between ">
-                                    <h4 class="p-0"> {{ prod.getNombre() }}
-                                    </h4>
+                                <h4 class="p-0"> {{ producto.getNombre() }}
+                                    <small ><i > {{ producto.getMarca() }}</i></small>
+                                </h4>
+                                <a href="{{ path('producto_show', {'id': producto.getId()}) }}" class="btn btn-outline-primary">More details...</a>
+                            </div>
+                            <div class="px-2">
+                                <p class="card-body text-muted mb-0"> {{ producto.getResolucion() }} </p>
                             </div>
                         </div>
                     </div>

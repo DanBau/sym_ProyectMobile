@@ -10,4 +10,10 @@ namespace AppBundle\Repository;
  */
 class UserRepository extends \Doctrine\ORM\EntityRepository
 {
+        function getUserQueryBuilder() {
+        $qb = $this->getEntityManager()->createQueryBuilder();
+        return $qb->select('e')
+                        ->from('AppBundle:User','e');
+
+    }
 }

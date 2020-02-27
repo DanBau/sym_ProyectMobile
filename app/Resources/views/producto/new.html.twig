@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ parent() }}
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-8 mx-auto">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Crea Producto</h3>
+                        <h4 class="card-subtitle mb-2 text-muted">Añadir</h4>
+                        <div class="card-text">
+                            {{ form_start(form) }}
+                            <div class="border border-white row">
+                                <label for="nombre"
+                                       class="col-4 col-form-label">{{ form_label(form.nombre) }}</label>
+                                <div class="col-8">
+                                    {{ form_widget(form.nombre) }}
+                                </div>
+                            </div>
+                            <div class="border border-white  row">
+                                <label for="bateria"
+                                       class="col-4 col-form-label">{{ form_label(form.bateria) }}</label>
+                                <div class="col-8">
+                                    {{ form_widget(form.bateria) }}
+                                </div>
+                            </div>
+                            <div class="border border-white  row">
+                                <label for="ram"
+                                       class="col-4 col-form-label">{{ form_label(form.ram) }}</label>
+                                <div class="col-8">
+                                    {{ form_widget(form.ram) }}
+                                </div>
+                            </div>
+                            <div class="border border-white  row">
+                                <label for="rom"
+                                       class="col-4 col-form-label">{{ form_label(form.rom) }}</label>
+                                <div class="col-8">
+                                    {{ form_widget(form.rom) }}
+                                </div>
+                            </div>
+                            <div class="border border-white  row">
+                                <label for="Sistema"
+                                       class="col-4 col-form-label">{{ form_label(form.sistema) }}</label>
+                                <div class="col-8">
+                                    {{ form_widget(form.sistema) }}
+                                </div>
+                            </div>
+                            <div class="border border-white  row">
+                                <label for="Pulgadas"
+                                       class="col-4 col-form-label">{{ form_label(form.pulgadas ) }}</label>
+                                <div class="col-8">
+                                    {{ form_widget(form.pulgadas) }}
+                                </div>
+                            </div>
+
+                            <div class="border border-white  row">
+                                <label for="Resolucion"
+                                       class="col-4 col-form-label">{{ form_label(form.resolucion) }}</label>
+                                <div class="col-8">
+                                    {{ form_widget(form.resolucion) }}
+                                </div>
+                            </div>
+                            <div class="border border-white  row">
+                                <label for="Marca"
+                                       class="col-4 col-form-label">{{ form_label(form.marca) }}</label>
+                                <div class="col-8">
+                                    {{ form_widget(form.marca) }}
+                                </div>
+                            </div>
+                            <div class="border border-white  row">
+                                <label for="User"
+                                       class="col-4 col-form-label">{{ form_label(form.user) }}</label>
+                                <div class="col-8">
+                                    {{ form_widget(form.user) }}
+                                </div>
+                            </div>
+
+
+                            <div class="border border-white  row">
+                                <div class="col-sm-4 textarea">
+                                    {{ form_widget(form.save) }}
+                                </div>
+                            </div>
+                        </div>
+                        {{ form_end(form) }}
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+

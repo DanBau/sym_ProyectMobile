@@ -240,7 +240,7 @@ class Producto {
      */
     private $marca;
     
-    public function getMarca(): Marca {
+    public function getMarca() {
         return $this->marca;
     }
 
@@ -258,7 +258,7 @@ class Producto {
     
     
     
-    public function getUser(): User {
+    public function getUser() {
         return $this->user;
     }
 
@@ -266,6 +266,9 @@ class Producto {
         $this->user = $user;
     }
 
+    public function __toString() {
+        return $this->nombre;
+    }
 
 
 }

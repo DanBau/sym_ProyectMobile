@@ -1,0 +1,101 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ parent() }}
+    <div class="container">
+        <div class="row">
+
+            <div class="col-10 mx-auto">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title"> Editar Producto </h3>
+                        <div class="card-text">
+                            {{ form_start(edit_form, {'action': path('producto_edit', {'id':producto.id}), 'method': 'POST'}) }}
+
+                            <div class="border border-white row">
+                                <label for="nombre" class="col-2 col-form-label">{{ form_label(edit_form.nombre) }}</label>
+                                <div class="col-10">
+                                    {{ form_widget(edit_form.nombre) }}
+                                </div>
+                            </div>
+                            <div class="border border-white  row">
+                                <label for="bateria" class="col-2 col-form-label">{{ form_label(edit_form.bateria) }}</label>
+                                <div class="col-10">
+                                    {{ form_widget(edit_form.bateria) }}
+                                </div>
+                            </div>
+                            <div class="border border-white  row">
+                                <label for="ram" class="col-2 col-form-label">{{ form_label(edit_form.ram) }}</label>
+                                <div class="col-10">
+                                    {{ form_widget(edit_form.ram) }}
+                                </div>
+                            </div>
+                            <div class="border border-white  row">
+                                <label for="rom" class="col-2 col-form-label">{{ form_label(edit_form.rom) }}</label>
+                                <div class="col-10">
+                                    {{ form_widget(edit_form.rom) }}
+                                </div>
+                            </div>
+
+                            <div class="border border-white  row">
+                                <label for="sistema" class=" col-2 col-form-label">{{ form_label(edit_form.sistema) }}</label>
+                                <div class="col-10">
+                                    {{ form_widget(edit_form.sistema) }}
+                                </div>
+                            </div>
+                            <div class="border border-white  row">
+                                <label for="pulgadas" class="col-2 col-form-label">{{ form_label(edit_form.pulgadas) }}</label>
+                                <div class="col-10 ">
+                                    <div class="input-group btn btn-toggle" >
+                                        {{ form_widget(edit_form.pulgadas) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-white  row">
+                                <label for="resolucion" class="col-2 col-form-label">{{ form_label(edit_form.resolucion) }}</label>
+                                <div class="col-10 ">
+                                    <div class="input-group btn btn-toggle" >
+                                        {{ form_widget(edit_form.resolucion) }}
+                                    </div>
+                                </div>
+                            </div>                           
+                            <div class="border border-white  row">
+                                <label for="marca" class="col-2 col-form-label">{{ form_label(edit_form.marca) }}</label>
+                                <div class="col-10 ">
+                                    <div class="input-group btn btn-toggle" >
+                                        {{ form_widget(edit_form.marca) }}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border border-white  row">
+                                <label for="user" class="col-2 col-form-label">{{ form_label(edit_form.user) }}</label>
+                                <div class="col-10 ">
+                                    <div class="input-group btn btn-toggle" >
+                                        {{ form_widget(edit_form.user) }}
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="border border-white  row">
+                                <div class="col-4">
+                                    {{ form_widget(edit_form.save) }}
+                                </div>
+                            </div>
+                        </div>
+                        {{ form_end(edit_form) }}
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    {% block javascripts %}
+        {{ parent() }}
+    {% endblock %}
+{% endblock %}

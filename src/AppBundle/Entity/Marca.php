@@ -103,5 +103,11 @@ class Marca
     function __construct(){
         $this->products = new \Doctrine\Common\Collections\ArrayCollection();
     }
+    
+    public function __toString() {
+        return $this->nombre;
+        
+    }
+
 }
 
